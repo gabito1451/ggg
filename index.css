@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/white\ 7.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+.gabito {
+  display: none;
+}
+.main svg {
+  background-color: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(141, 141, 153);
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-top-right-radius: 150px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: whitesmoke;
+  padding: 30px 100px;
+}
+.navbar .logo img {
+  width: 200px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar ul li {
+  margin-left: 40px;
+  padding: 20px;
+  list-style-type: none;
+}
+.navbar ul li a:hover {
+  border-bottom: 1px solid white;
+  animation: animate 1s ease-in;
+  background-color: #ff5500;
+  box-shadow: 1px 3px 4px 4px white;
+  border-radius: 5px;
+  padding: 3px;
+  color: white;
+}
+
+.navbar ul li a {
+  font-size: 24px;
+  font-weight: 500;
+  transition: animate 1s ease;
+  color: black;
+  text-decoration: none;
+}
+.main {
+  height: 100%;
+  width: 100%;
+}
+section {
+  position: absolute;
+  background-image: url(./img/black.jpg);
+  width: 100%;
+  height: 100%;
+}
+.text {
+  position: relative;
+  bottom: 150px;
+  color: black;
+  padding: 0px 40px;
+  height: 200px;
+  width: 500px;
+  margin-bottom: -20px;
+}
+.text .miles img {
+  padding: 20px;
+  margin-left: 700px;
+  margin-top: -500px;
+  margin-bottom: -100px;
+  border-radius: 300px;
+  transition: transform 1s;
+}
+.text .miles img:hover {
+  transform: rotate(360deg) translateZ(0);
+}
+.text h1 {
+  margin: 10px;
+  font-size: 30px;
+  padding-left: 50px;
+}
+.text h2 {
+  margin: 10px;
+  padding-left: 50px;
+}
+.text p {
+  margin: 10px;
+  padding-left: 50px;
+}
+.text button {
+  margin: 10px;
+  background: #ff5500;
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  margin-left: 50px;
+  animation: animate 1s ease-in;
+}
+/* service page*/
+.service-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service-page .text {
+  text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  .navbar .logo {
+    padding: 20px 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gabito {
+    visibility: visible;
+    color: black;
+    display: inline;
+    margin-left: -320px;
+  }
+  .navbar .logo {
+    margin-left: -110px;
+    font-size: 40px;
+  }
+  .navbar ul li a {
+    display: none;
+  }
+  .text {
+    position: absolute;
+    width: 300px;
+    padding: 0px;
+    display: block;
+    margin-bottom: 180px;
+  }
+  .text .miles img {
+    margin-left: 65px;
+    margin-bottom: -250px;
+    opacity: 0.7;
+    width: 10px;
+    height: 10px;
+  }
+  .text h1 {
+    font-size: 25px;
+    margin-left: -40px;
+    margin-top: 30px;
+  }
+  .text h2 {
+    font-size: 20px;
+    margin-left: -40px;
+  }
+  .text p {
+    font-size: 14px;
+    margin-left: -40px;
+    width: 300px;
+    justify-content: center;
+  }
+  .text button {
+    margin-left: 10px;
+  }
+  * {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}

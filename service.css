@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./img/white\ 7.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-attachment: ;
+  background-blend-mode: soft-light;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background: whitesmoke;
+  padding: 30px 100px;
+}
+.navbar .logo img {
+  width: 200px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+.navbar ul li {
+  margin-left: 40px;
+  padding: 20px;
+  list-style-type: none;
+}
+.navbar ul li a:hover {
+  border-bottom: 1px solid white;
+  animation: animate 1s ease-in;
+  background-color: #ff5500;
+  box-shadow: 1px 3px 4px 4px white;
+  border-radius: 5px;
+  padding: 3px;
+  color: white;
+}
+
+.navbar ul li a {
+  font-size: 24px;
+  font-weight: 500;
+  transition: animate 1s ease;
+  color: black;
+  text-decoration: none;
+}
+.service-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  gap: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.service-info .service-info-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+.service-info .service-info-text p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.service-info .service-icon img {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  box-shadow: 0px 2px 7px 9px white;
+  transform: translate(0%, 0%);
+  animation: myfirst 5s infinite linear;
+}
+.sub-title {
+  height: 60px;
+  width: 100%;
+  font-size: 24px;
+  padding-left: 50px;
+  margin-top: 15px;
+}
+.sub-title h1 {
+  padding-left: 50px;
+  font-weight: lighter;
+}
+.rendition {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 50px;
+}
+.rendition-text {
+  height: 400px;
+  box-shadow: 0px 2px 4px white;
+  padding: 20px 20px;
+  transition: animate 1s ease;
+}
+.rendition-text h1 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.rendition-text p {
+  word-spacing: 5px;
+  flex-basis: 1;
+  line-height: 1.5;
+}
+.design-service {
+  height: 60px;
+  width: 100%;
+  font-size: 24px;
+  padding-left: 50px;
+  margin-top: 15px;
+  background-image: url(./img/white\ 3.we);
+  background-repeat: no-repeat;
+}
+.design-service h1 {
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 40px;
+}
+.design-service-offers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-repeat: no-repeat;
+  background-position: right;
+  gap: 330px;
+}
+.design-service-offer-text {
+  height: 300px;
+  width: 400px;
+  box-shadow: 0px 2px 4px white;
+  padding: 20px 20px;
+  transition: animate 1s ease;
+}
+.design-service-offer-text h1 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.design-service-offer-text p {
+  word-spacing: 5px;
+  line-height: 1.5;
+}
+
+@keyframes myfirst {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar .logo {
+    padding: 20px 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  body,
+  html {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    overflow-x: hidden;
+  }
+  .gabito {
+    visibility: visible;
+    color: black;
+    display: inline;
+    margin-left: -320px;
+  }
+  .navbar {
+    width: 450px;
+  }
+  .navbar .logo {
+    margin-left: -110px;
+    font-size: 40px;
+  }
+  .navbar ul li a {
+    display: none;
+  }
+  .service-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: -60px;
+    height: 400px;
+  }
+  .service-info .service-info-text h1 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 25px;
+  }
+  .service-info .service-info-text p {
+    margin-left: 25px;
+    font-size: 16px;
+    width: 150px;
+    font-weight: lighter;
+  }
+  .service-info .service-icon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    box-shadow: 0px 2px 7px 9px white;
+  }
+  .sub-title h1 {
+    margin-left: -90px;
+    font-weight: 400;
+    font-size: 23px;
+    margin-top: -60px;
+    height: 50px;
+  }
+  .rendition {
+    display: block;
+  }
+  .design-service {
+    display: none;
+  }
+  .rendition {
+    margin-left: -105px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  .rendition .rendition-text h1 {
+    font-weight: lighter;
+    font-size: 23px;
+  }
+  .rendition .rendition-text p {
+    width: 350px;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 20px;
+  }
+  .rendition .rendition-text img {
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  .design-service {
+    display: block;
+    margin-top: 650px;
+  }
+  .design-service h1 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: -90px;
+  }
+  .design-service-offers {
+    display: block;
+  }
+  .design-service-offer-text {
+    margin-left: -105px;
+  }
+  .design-service-offer-text h1 {
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  .design-service-offer-text p {
+    width: 350px;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 20px;
+  }
+}
